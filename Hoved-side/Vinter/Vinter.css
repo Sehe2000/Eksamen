@@ -29,7 +29,7 @@ body, html {
     position: absolute;
     left: 50%;
     bottom: 25%;
-    width: 150px; /* Adjust size if necessary */
+    width: 300px; /* Adjust size if necessary */
     height: -200px;
     animation: skiDown 3s ease-in-out infinite; /* Animation lasts 3 seconds and loops */
 }
