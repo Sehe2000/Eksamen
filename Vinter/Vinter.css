@@ -1,33 +1,57 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset and general styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff; /* lys bakgrunn for vinterstemning */
+    box-sizing: border-box;
 }
-.background {
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff; /* Light snowy blue background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
     position: relative;
-    width: 100%
-    height: 600px;
-    background-color: #e8f4f9;
-    background-image: url('snowy_landscape.jpg');
-    background-size: cover;
-    background-position: center;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-
--ski-slope img{
-    width: 150px;/* tillpas størelsen på slalomen*/
-}
-
-
-}
-/* styling for footer*/
-footer{
-    background-color: #1e3d58;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+/* Skier animation */
+.skier {
     position: absolute;
-    bottom: 0;
+    left: 50%;
+    bottom: 25%;
+    width: 150px; /* Adjust size if necessary */
+    height: -200px;
+    animation: skiDown 3s ease-in-out infinite; /* Animation lasts 3 seconds and loops */
+}
+
+/* Cabin image centered */
+.cabin img {
+    display: block;
     width: 100%;
+    max-width: 100000000000px; /* Ensure the cabin image is appropriately sized */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional: shadow for depth */
+}
+
+/* Keyframes for skier animation */
+@keyframes skiDown {
+    0% {
+        transform: translate(0, 0) rotate(-10deg); /* Start position */
+    }
+    50% {
+        transform: translate(-200px, 200px) rotate(0deg); /* Midpoint */
+    }
+    100% {
+        transform: translate(-100px, 400px) rotate(10deg); /* End position */
+    }
 }
