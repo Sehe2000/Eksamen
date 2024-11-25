@@ -33,12 +33,7 @@ right: 50px;
 -ski-slope img{
     width: 150px;/* tillpas størelsen på slalomen*/
 }
-.cabin {
-    position: absolute;
-    bottom: 30px;
-    left: 50px;
-    width: 300px;
-}
+
 .cabin img {
     width: 100%;
     border-radius: 10px;
