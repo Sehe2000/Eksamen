@@ -4,17 +4,6 @@ body {
     padding: 0;
     background-color: #f0f8ff; /* lys bakgrunn for vinterstemning */
 }
-header {
-    background-color: #1e3d58 ;
-    color: white ;
-    text-align: center;
-    padding: 20px 0 ;
-}
-h1 {
-    margin: 0;
-    font-size: 2.5rem;
-} 
-/* Bakgrunnsdesign */
 .background {
     position: relative;
     width: 100%
@@ -24,20 +13,13 @@ h1 {
     background-size: cover;
     background-position: center;
 }
-.ski-slope {¨
-position: absolute ;
-bottom: 20px;
-right: 50px;
-}
+
 
 -ski-slope img{
     width: 150px;/* tillpas størelsen på slalomen*/
 }
 
-.cabin img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
 }
 /* styling for footer*/
 footer{
