@@ -1,4 +1,4 @@
-/* Reset and general styles Koden er godkjent av css validator*/
+/* Reset and general styles Koden er godkjent av css validator */
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@ body, html {
 .cabin img {
     display: block;
     width: 100%;
-    max-width: 100000000000px; /* Ensure the cabin image is appropriately sized */
+    max-width: 100%; /* Corrected to a valid value */
     border-radius: 10px; /* Optional: rounded corners */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional: shadow for depth */
 }
