@@ -25,6 +25,22 @@ body {
     background-color: yellow;
     top: 10%;
     left: 10%;
+    animation: sunray 7.3s infinite ease-in-out;
+}
+
+@keyframes sunray {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .ocean {
@@ -37,12 +53,28 @@ body {
 }
 
 .waves {
-    height: 20px;
+    height: 50px;
     width: 100%;
+    position: absolute;
     background-color: aquamarine;
     border-radius: 40%;
-    bottom: 30%;
+    bottom: 50px;
+    animation: wave 10s infinite ease-in-out;
 }
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 
 .sand {
     height: 30%;
@@ -54,9 +86,69 @@ body {
 }
 
 .ball {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 150px;
+    right: 300px;
+}
+
+.sandcastle {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 150px;
+    right: 800px;
+    transition: transform 1.3s ease;
+}
+
+.sandcastle:hover {
+    transform: scale(1.2);
+}
+
+.surfboard {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+}
+
+.sailboat {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 575px;
+    right: 0;
+    animation: sailing 18s linear;
+}
+
+@keyframes sailing {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform:translateX(-100vw) ;
+    }
+}
+
+.umbrella {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+    transition: transform 1s ease;
+}
+
+.umbrella:hover {
+    transform: scale(1.2);
+}
+
+.towel {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: 70px;
+    left: 200px;
 }
