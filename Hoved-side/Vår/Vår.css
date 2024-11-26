@@ -1,0 +1,45 @@
+body, html {
+    background-image: url(imagesvår/Vår.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    animation: moveLeft 5s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.container:hover {
+    transform: translate(-100px);
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-500px);
+    }
+}
+
+
+
+
+
+
+ 
+
