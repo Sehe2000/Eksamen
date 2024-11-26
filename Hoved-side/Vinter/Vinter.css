@@ -1,4 +1,4 @@
-/* Reset and general styles */
+/* Reset and general styles Koden er godkjent av css validator*/
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ body, html {
     left: 50%;
     bottom: 25%;
     width: 300px; /* Adjust size if necessary */
-    height: -200px;
+    height: 200px;
     animation: skiDown 3s ease-in-out infinite; /* Animation lasts 3 seconds and loops */
 }
 
