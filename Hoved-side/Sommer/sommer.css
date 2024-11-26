@@ -25,10 +25,10 @@ body {
     background-color: yellow;
     top: 10%;
     left: 10%;
-    animation: sunray 7.3s infinite ease-in-out;
+    animation: sunray 7.3s infinite ease-in-out; /* Får solen til å bevege på seg kontinuerlig*/
 }
 
-@keyframes sunray {
+@keyframes sunray {    /* Få animasjon ved hjelp av @keyframes*/
     0% {
         transform: scale(1);
         opacity: 1;
@@ -118,8 +118,8 @@ body {
     height: 150px;
     width: 150px;
     position: absolute;
-    bottom: 575px;
-    right: 0;
+    bottom: 475px;
+    left: 100%;
     animation: sailing 18s linear;
 }
 
