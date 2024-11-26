@@ -15,7 +15,7 @@ body, html {
 }
 
 /* Title Container */
-.title-container {
+.årstider-bilder {
     width: 100%;
     height: 20%; /* Adjust height to allow room for both the animation and grid */
     display: flex;
@@ -24,7 +24,7 @@ body, html {
     position: relative;
 }
 
-.title {
+.årstider-overskrift {
     font-size: 4rem;
     color: #333;
     display: flex;
