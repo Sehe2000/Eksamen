@@ -53,3 +53,10 @@ body {
     right: 0;
 }
 
+.ball {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
