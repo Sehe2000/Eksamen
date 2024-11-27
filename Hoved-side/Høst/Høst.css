@@ -1,0 +1,187 @@
+html, body {
+    background-color: #14657a;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+#Tree2 {
+    width: 550px;
+    height: 690px;
+    position: absolute;
+    z-index: 600;
+
+   /* min-height: 700px;
+    max-height: 800px;
+    min-width: 575px;
+    max-width: 625px; */
+}
+
+#TreDetaljer {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(29, 23, 23);
+    border-radius: 50%;
+    z-index: 550;
+    bottom: 40px;
+    left: 160px;
+    position: absolute;
+    filter: blur(15px);
+
+}
+
+
+.Gresskar {
+    width: 100px;
+    height: 100px;
+    bottom: 45px;
+    left: 300px;
+    position: absolute;
+    z-index: 600;
+
+}
+
+#GresskarDetaljer {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(29, 23, 23);
+    border-radius: 50%;
+    bottom: 45px;
+    left: 275px;
+    position: absolute;
+    z-index: 550;
+    filter: blur(15px);
+}
+
+#Bål {
+    width: 150px;
+    height: 150px;
+    bottom: 90px;
+    right: 300px;
+    position: absolute;
+    z-index: 1000;
+}
+
+#BålDetaljer {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(29, 23, 23);
+    border-radius: 50%;
+    bottom: 90px;
+    right: 325px;
+    position: absolute;
+    z-index: 550;
+    filter: blur(10px);
+
+}
+
+#BålLys {
+    width: 125px;
+    height: 125px;
+    background-color: rgb(179, 109, 4);
+   /* border-top-left-radius: 50%;
+    border-top-right-radius: 50%; */
+    border-radius: 50%;
+    bottom: 125px;
+    right: 309px;
+    position: absolute;
+    z-index: 550;
+    filter: blur(20px);
+}
+
+.Fjell {
+    width: 100%;
+    height: 500px;
+}
+
+#Sky1 {
+    width: 200px;
+    height: 115px;
+    top: 30px;
+    right: 325px;
+    position: absolute;
+    z-index: 600;
+    opacity: 0.4;
+}
+
+ #Sky2 {
+    width: 400px;
+    height: 225px;
+    top: 50px;
+    right: 500px;
+    position: absolute;
+    z-index: 600; 
+    opacity: 0.7;
+    transform: rotate(3deg);
+} 
+
+#Sky3 {
+    width: 350px;
+    height: 200px;
+    top: 50px;
+    right: 100px;
+    position: absolute;
+    z-index: 600;
+    opacity: 0.6;
+    transform: rotate(-3deg);
+
+}
+
+#bakkenBoks {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(41, 33, 33);
+    border: 0px solid;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+
+}
+
+
+#SolGul {
+    width: 75px;
+    height: 75px;
+    background: radial-gradient(circle, rgba(255, 255, 0, 0.818) 60%, orange 100%);
+    opacity: 0.7;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border-radius: 50%;
+    z-index: 2;
+    filter: blur(0.3px);
+
+}
+
+#SolRød {
+    width: 75px;
+    height: 75px;
+    background: radial-gradient(circle, red 60%, darkred 100%);
+    opacity: 0.5;
+    position: absolute;
+    top: 23px;
+    right: 22px;
+    border-radius: 50%;
+    z-index: 1;
+    filter: blur(0.3px);
+}
+
+#SolBakgrunn {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(196, 136, 15);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    z-index: 0;
+    filter: blur(10px);
+    box-shadow: 0 0 30px 20px rgba(181, 167, 11, 0.592);
+}
