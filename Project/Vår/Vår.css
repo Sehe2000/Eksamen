@@ -1,23 +1,23 @@
 body, html {
     background-image: url(imagesvår/Vår.jpg);
+    width: 105%;
     height: 100%;
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.container {
-    position: absolute;
-    width: 105%;
-    height: 105%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
     overflow: hidden;
 }
 
 .container {
-    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.container {
+    position: absolute;
     animation: moveLeft 5s linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -28,6 +28,24 @@ body, html {
 }
 
 @keyframes moveLeft {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-1320px);
+    }
+}
+
+.Hunter{
+    position: absolute;
+    bottom: 5px;
+    left: 90%;
+    transform: translateX(-50%);
+    animation: walkAndStop 7s ease-in-out forwards;
+    pointer-events: none;
+}
+
+@keyframes walkAndStop {
     0% {
         transform: translate(0);
     }
