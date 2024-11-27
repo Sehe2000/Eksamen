@@ -30,6 +30,16 @@ body, html {
     animation: skiDown 3s ease-in-out infinite; /* Animation lasts 3 seconds and loops */
 }
 
+.bear{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+.bear-img {
+    width: 10%;
+    height: 10%;
+}
+
 /* Cabin image centered */
 .Vinterlandscape img {
     display: block;
@@ -49,5 +59,17 @@ body, html {
     }
     100% {
         transform: translate(-100px, 400px) rotate(10deg); /* Dette blir slutt posisjonen til animasjonen */
+    }
+}
+
+@keyframes chase {
+    0% {
+        transform: translate(0, 0) rotate(-10deg); /* Start posisjon til ski mannen */
+    }
+    50% {
+        transform: translate(-200px, 200px) rotate(0deg); /* Dette er midpunktet av animasjonen */
+    }
+    100% {
+        transform: translate(-100px, 400px) rotate(0deg); /* Dette blir slutt posisjonen til animasjonen */
     }
 }
