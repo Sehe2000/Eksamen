@@ -166,8 +166,8 @@ body {
     background: radial-gradient(circle, red 60%, darkred 100%);
     opacity: 0.5;
     position: absolute;
-    top: 23px;
-    right: 22px;
+    top: 21px;
+    right: 20px;
     border-radius: 50%;
     z-index: 1000;
     filter: blur(15px);
