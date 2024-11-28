@@ -73,3 +73,9 @@ body, html {
         transform: translate(-100px, 400px) rotate(0deg); /* Dette blir slutt posisjonen til animasjonen */
     }
 }
+
+.bear-caption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
