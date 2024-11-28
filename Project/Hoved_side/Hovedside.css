@@ -1,4 +1,4 @@
-/* Reset styles to avoid layout inconsistencies */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body, html {
 }
 
 /* Header styling */
-.title-container {
+.containeravtitler {
     width: 100%;
     padding: 25px;
     text-align: center;
@@ -36,17 +36,17 @@ body, html {
     animation: dropDown 1.3s ease-out forwards;
 }
 
-/* Animating letters with slight delay */
+/* Animasjon av bokstavene for "Årstid" med litt delay */
 .bokstaven:nth-child(1) { animation-delay: 0.1s; }
-.bokstaven:nth-child(2) { animation-delay: 0.4s; }
-.bokstaven:nth-child(3) { animation-delay: 0.2s; }
-.bokstaven:nth-child(4) { animation-delay: 0.6s; }
+.bokstaven:nth-child(2) { animation-delay: 0.2s; }
+.bokstaven:nth-child(3) { animation-delay: 0.3s; }
+.bokstaven:nth-child(4) { animation-delay: 0.4s; }
 .bokstaven:nth-child(5) { animation-delay: 0.5s; }
-.bokstaven:nth-child(6) { animation-delay: 0.8s; }
-.bokstaven:nth-child(7) { animation-delay: 0.3s; }
-.bokstaven:nth-child(8) { animation-delay: 0.7s; }
+.bokstaven:nth-child(6) { animation-delay: 0.6s; }
+.bokstaven:nth-child(7) { animation-delay: 0.7s; }
+.bokstaven:nth-child(8) { animation-delay: 0.8s; }
 
-/* Dropdown animation */
+/* Bokstavene faller ned animasjon som dropDown */
 @keyframes dropDown {
     0% {
         opacity: 0;
@@ -58,8 +58,8 @@ body, html {
     }
 }
 
-/* Grid layout for seasons */
-.season-grid {
+/* Grid layout for årstidene */
+.årstid-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 95%;
@@ -68,28 +68,28 @@ body, html {
     margin-top: 20px;
 }
 
-/* Individual season box styling */
-.season-box {
+/* styling for hver enkelte boks */
+.årstid-box {
     position: relative;
     overflow: hidden;
     border-radius: 8px; /* Rounded corners for a modern look */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Images in the season boxes */
-.season-box img {
+/* bildene som er inni boksene */
+.årstid-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-/* Hover effect for season boxes */
-.season-box:hover {
+/* dette skaper et hover effect for boksene */
+.årstid-box:hover {
     transform: scale(1.03); /* Slight zoom */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-.season-box:hover img {
+.årstid-box:hover img {
     transform: scale(1.05);
 }
