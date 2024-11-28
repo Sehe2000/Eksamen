@@ -1,0 +1,236 @@
+html, body {
+    background-color: #14657a;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; 
+} 
+#Tre { /* Treet */
+    width: 550px;
+    height: 690px;
+    position: absolute;
+    z-index: 2000;
+}
+
+
+#TreDetaljer { /* Skyggen til treet */
+    width: 200px;
+    height: 50px;
+    background-color: rgb(29, 23, 23);
+    border-radius: 50%;
+    z-index: 550;
+    bottom: 40px;
+    left: 160px;
+    position: absolute;
+    filter: blur(15px);
+
+}
+
+
+.Gresskar { /* Gresskaret */
+    width: 100px;
+    height: 100px;
+    bottom: 45px;
+    left: 300px;
+    position: absolute;
+    z-index: 801;
+
+}
+
+#GresskarDetaljer { /* Skyggen til gresskaret. */
+    width: 100px;
+    height: 50px;
+    background-color: rgb(29, 23, 23);
+    border-radius: 50%;
+    bottom: 45px;
+    left: 275px;
+    position: absolute;
+    z-index: 550;
+    filter: blur(15px);
+}
+
+
+#Bål { /* Bålet */
+    width: 150px;
+    height: 150px;
+    bottom: 90px;
+    right: 300px;
+    position: absolute;
+    z-index: 1000;
+}
+
+#BålDetaljer { /*Skyggen til bålet */
+    width: 150px;
+    height: 50px;
+    background-color: rgb(29, 23, 23);
+    border-radius: 50%;
+    bottom: 90px;
+    right: 325px;
+    position: absolute;
+    z-index: 550;
+    filter: blur(10px);
+
+}
+
+#BålLys { /* Sirkelen som pulserer bak bålet, som blir da flammene til bålet */
+    width: 125px;
+    height: 125px;
+    background-color: rgb(179, 109, 4);
+    border-radius: 50%;
+    bottom: 125px;
+    right: 309px;
+    position: absolute;
+    z-index: 550;
+    filter: blur(20px);
+    animation: BålPulsering 2.5s infinite alternate-reverse linear;
+    transform-origin: center;
+}
+
+.Fjell { /* Fjellet */
+    width: 100%;
+    height: 500px;
+    z-index: 550;
+    transform: scaleX(-1); /*Brukt for å "flippe" bildet. Litt trist å ikke ha treet med */
+}
+
+#Sky1 { /* Skyene */
+    width: 200px;
+    height: 115px;
+    top: 30px;
+    right: -200px;
+    position: absolute;
+    z-index: 1101;
+    opacity: 0.5;
+    animation: SkyerBevegelse 55s linear infinite; 
+    animation-delay: 0.5s;
+}
+
+ #Sky2 {
+    width: 375px;
+    height: 200px;
+    top: 50px;
+    left: -400px;
+    position: absolute;
+    z-index: 1102; 
+    opacity: 0.56;
+    transform: rotate(3deg);
+    animation: SkyerBevegelse2 40s linear infinite;
+} 
+
+#Sky3 { 
+    width: 250px;
+    height: 150px;
+    top: 50px;
+    right: -200px;
+    position: absolute;
+    z-index: 549;
+    opacity: 0.4;
+    transform: rotate(-3deg);
+    animation: SkyerBevegelse 54s linear infinite; 
+
+}
+
+#bakkenBoks { /* Dette representerer bakken */
+    width: 100%;
+    height: 250px;
+    background-color: rgb(41, 32, 32);
+    border: 0px solid;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+}
+
+
+#SolGul { /* Gule solen */
+    width: 75px;
+    height: 75px;
+    background: radial-gradient(circle, rgba(255, 255, 0, 0.818) 60%, orange 100%);
+    opacity: 0.7;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border-radius: 50%;
+    z-index: 1100;
+    filter: blur(0.3px); 
+
+}
+
+#SolRød { /* Lagde to soler for å skape en "sol på horisonten"/"layering" effekt. */
+    width: 75px;
+    height: 75px;
+    background: radial-gradient(circle, red 60%, darkred 100%);
+    opacity: 0.5;
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 1000; /* PGA så mange elementer holdt jeg ikke helt øye på hva tidligere elementer 
+    sin z-index var så jeg skrev bare tall jeg trodde var høyere/lavere */
+    filter: blur(15px); 
+    /* Tenkte at blur-effekten (og rød-fargen) skulle gi solen en idee om at den snart forsvinner, 
+    som karakteriserer høst/vinter - at dagene blir kortere */
+}
+
+#SolBakgrunn { /* Gløden/sirkelen i bakgrunnen av solen som skal være dens glød */ 
+    width: 90px;
+    height: 90px;
+    background-color: rgb(196, 136, 15);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    z-index: 900;
+    filter: blur(15px);
+    box-shadow: 0 0 30px 20px rgba(181, 167, 11, 0.592); 
+    animation: SolPulsering 2.5s infinite alternate-reverse linear;
+    transform-origin: center;
+}
+
+@keyframes SolPulsering { /* Animasjonen til solen */
+    0% { 
+        transform: scale(0.7);
+     }
+    100% {
+        transform: scale(1);
+    }
+ 
+}
+
+@keyframes BålPulsering { /*Animasjonen til bålets flammer */
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes SkyerBevegelse { /*Animasjonen til skyenes (1 og 3) bevegelse */ 
+    0% {
+        transform:translateX(0%);
+    }
+    100% {
+        transform:translateX(-1000%);
+    }
+
+}
+
+@keyframes SkyerBevegelse2 { /* Animasjonen til sky nr. 3 */
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(500%)
+    }
+}
+
+
+
+
