@@ -39,7 +39,7 @@ body {
     bottom: 45px;
     left: 300px;
     position: absolute;
-    z-index: 801;
+    z-index: 2001;
 
 }
 
@@ -157,7 +157,7 @@ body {
     top: 20px;
     right: 25px;
     border-radius: 50%;
-    z-index: 1100;
+    z-index: 100;
     filter: blur(0.3px); 
 
 }
@@ -171,7 +171,7 @@ body {
     top: 21px;
     right: 20px;
     border-radius: 50%;
-    z-index: 1000; /* PGA så mange elementer holdt jeg ikke helt øye på hva tidligere elementer 
+    z-index: 99; /* PGA så mange elementer holdt jeg ikke helt øye på hva tidligere elementer 
     sin z-index var så jeg skrev bare tall jeg trodde var høyere/lavere */
     filter: blur(15px); 
     /* Tenkte at blur-effekten (og rød-fargen) skulle gi solen en idee om at den snart forsvinner, 
@@ -186,7 +186,7 @@ body {
     top: 15px;
     right: 15px;
     border-radius: 50%;
-    z-index: 900;
+    z-index: 98;
     filter: blur(15px);
     box-shadow: 0 0 30px 20px rgba(181, 167, 11, 0.592); 
     animation: SolPulsering 2.5s infinite alternate-reverse linear;
