@@ -1,210 +1,190 @@
+/* Global tilbakestilling for konsekvent styling */
 html, body {
-    background-color: #14657a;
+    background-color: #155672; /* Dyp blågrønn for en skumringsaktig høststemning */
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Hindrer horisontal rulling */
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100%; 
+    /* Jeg ønsket et enkelt oppsett, så holdt det fleksibelt */
+    min-height: 100%;
 }
-#Tree2 {
-    width: 550px;
-    height: 690px;
+
+/* Treet: justert for å føles mindre perfekt */
+#main-tree {
+    width: 510px; /* Mindre trestørrelse for å balansere elementene */
+    height: auto; /* Holder proporsjonene konsekvente */
     position: absolute;
-    z-index: 800;
-
+    z-index: 800; /* Sørger for at det er over bakken */
+    left: 85px; /* Flyttet litt til siden for å unngå midten */
 }
 
-#TreDetaljer {
-    width: 200px;
-    height: 50px;
-    background-color: rgb(29, 23, 23);
+/* Skygge for å gi treet dybde */
+#tree-shadow {
+    width: 200px; 
+    height: 60px; /* Forlenget skyggen for realisme */
+    background-color: rgba(0, 0, 0, 0.2); /* Mykere skyggetone */
     border-radius: 50%;
     z-index: 550;
     bottom: 40px;
-    left: 160px;
+    left: 75px;
     position: absolute;
-    filter: blur(15px);
-
+    filter: blur(10px); /* Mindre intens uskarphet */
 }
 
-
-.Gresskar {
-    width: 100px;
-    height: 100px;
-    bottom: 45px;
-    left: 300px;
+/* Lite gresskar for en morsom sesongbetont detalj */
+.small-pumpkin {
+    width: 120px; /* Litt større for synlighet */
+    height: 110px;
+    bottom: 50px;
+    left: 270px;
     position: absolute;
     z-index: 801;
-
+    transform: rotate(-3deg); /* Litt rotasjon for å skape uperfeksjon */
 }
 
-#GresskarDetaljer {
-    width: 100px;
-    height: 50px;
-    background-color: rgb(29, 23, 23);
+/* Gresskarskygge */
+#pumpkin-shadow {
+    width: 110px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.2); /* Mykere skygge for gresskar */
     border-radius: 50%;
-    bottom: 45px;
-    left: 275px;
+    bottom: 48px;
+    left: 265px;
     position: absolute;
     z-index: 550;
-    filter: blur(15px);
+    filter: blur(8px); /* Mindre uskarphet for en mykere effekt */
 }
 
-
-#Bål {
+/* Bål med en subtil glød */
+#campfire-main {
     width: 150px;
     height: 150px;
-    bottom: 90px;
+    bottom: 100px;
     right: 300px;
     position: absolute;
     z-index: 1000;
+    transform: rotate(1deg); /* Liten uperfeksjon */
 }
 
-#BålDetaljer {
-    width: 150px;
+/* Bålskygge og glød */
+#campfire-shadow {
+    width: 160px; 
     height: 50px;
-    background-color: rgb(29, 23, 23);
+    background-color: rgba(0, 0, 0, 0.3); 
     border-radius: 50%;
-    bottom: 90px;
-    right: 325px;
+    bottom: 95px;
+    right: 310px;
     position: absolute;
     z-index: 550;
-    filter: blur(10px);
-
+    filter: blur(12px);
 }
 
-#BålLys {
-    width: 125px;
-    height: 125px;
-    background-color: rgb(179, 109, 4);
+#campfire-glow {
+    width: 140px;
+    height: 140px;
+    background-color: rgba(255, 140, 0, 0.6); /* Subtil oransje glød */
     border-radius: 50%;
-    bottom: 125px;
-    right: 309px;
+    bottom: 130px;
+    right: 285px;
     position: absolute;
     z-index: 550;
-    filter: blur(20px);
-    animation: BålPulsering 2.5s infinite alternate-reverse linear;
-    transform-origin: center;
+    filter: blur(20px); 
+    animation: campfire-glow-pulse 3s infinite alternate-reverse ease-in-out;
 }
 
-.Fjell {
+/* Fjell i bakgrunnen */
+.background-mountain {
     width: 100%;
-    height: 500px;
+    height: 450px; /* Lavere høyde for mer himmel */
     z-index: 550;
 }
 
-#Sky1 {
-    width: 200px;
-    height: 115px;
-    top: 30px;
-    right: 325px;
+/* Skyer med variasjon i plassering */
+#cloud-1 {
+    width: 180px;
+    height: 110px;
+    top: 35px;
+    right: 320px;
     position: absolute;
     z-index: 600;
-    opacity: 0.4;
+    opacity: 0.5; 
 }
 
- #Sky2 {
-    width: 400px;
-    height: 225px;
-    top: 50px;
+#cloud-2 {
+    width: 420px; 
+    height: 230px;
+    top: 60px;
     right: 500px;
     position: absolute;
     z-index: 600; 
     opacity: 0.7;
     transform: rotate(3deg);
-} 
-
-#Sky3 {
-    width: 350px;
-    height: 200px;
-    top: 50px;
-    right: 100px;
-    position: absolute;
-    z-index: 600;
-    opacity: 0.6;
-    transform: rotate(-3deg);
-
 }
 
-#bakkenBoks {
+#cloud-3 {
+    width: 350px;
+    height: 200px;
+    top: 65px;
+    right: 120px; /* Flyttet lenger til høyre for balanse */
+    position: absolute;
+    z-index: 600;
+    opacity: 0.6; 
+    transform: rotate(-5deg);
+}
+
+/* Bakkeelement */
+#ground {
     width: 100%;
     height: 250px;
-    background-color: rgb(41, 32, 32);
-    border: 0px solid;
+    background-color: #3c2d2d; /* Varm brunfarge for bakken */
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 500;
-    
-
-
 }
 
-
-#SolGul {
-    width: 75px;
-    height: 75px;
-    background: radial-gradient(circle, rgba(255, 255, 0, 0.818) 60%, orange 100%);
-    opacity: 0.7;
+/* Solens lag for subtile gradienteffekter */
+#sun-layer-1 {
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle, rgba(255, 255, 0, 0.8) 60%, orange 100%);
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 25px;
     border-radius: 50%;
     z-index: 1100;
-    filter: blur(0.3px);
-
 }
 
-#SolRød {
-    width: 75px;
-    height: 75px;
-    background: radial-gradient(circle, red 60%, darkred 100%);
-    opacity: 0.5;
+#sun-layer-2 {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(255, 100, 0, 0.6) 60%, red 100%);
     position: absolute;
-    top: 21px;
+    top: 20px;
     right: 20px;
     border-radius: 50%;
     z-index: 1000;
-    filter: blur(15px);
 }
 
-#SolBakgrunn {
-    width: 90px;
-    height: 90px;
-    background-color: rgb(248, 166, 0);
+#sun-layer-3 {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 165, 0, 0.6);
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 12px;
+    right: 18px;
     border-radius: 50%;
     z-index: 900;
     filter: blur(15px);
-    box-shadow: 0 0 30px 20px rgba(181, 167, 11, 0.592); 
-    animation: SolPulsering 2.5s infinite alternate-reverse linear;
-    transform-origin: center;
 }
 
-@keyframes SolPulsering {
-    0% { 
-        transform: scale(0.7);
-     }
-    100% {
-        transform: scale(2);
-    }
- 
+/* Animasjoner */
+@keyframes campfire-glow-pulse {
+    0% { transform: scale(0.9); }
+    100% { transform: scale(1.1); }
 }
-
-@keyframes BålPulsering {
-    0% {
-        transform: scale(0.7);
-    }
-    100% {
-        transform: scale(2);
-    }
-}
-
-

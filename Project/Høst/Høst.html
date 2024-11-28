@@ -1,29 +1,38 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Høst</title>
+    <title>Høst - Varmt Høstbilde</title>
+    <!-- Kobler til stilark for høsttema -->
     <link rel="stylesheet" href="høst.css">
 </head>
 <body>
-    <img src="høstimages/Tree2.png" alt="Tre" id="Tree2">
-    <img src="høstimages/gresskar.png" alt="Gresskar" class="Gresskar">
-    <img src="høstimages/Bål.png" alt="Bål" id="Bål">
-    <img src="høstimages/Fjell.png" alt="Fjell" class="Fjell">
-    <img src="høstimages/Sky.png" alt="Sky" id="Sky1">
-    <img src="høstimages/Sky.png" alt="Sky" id="Sky2">
-    <img src="høstimages/Sky.png" alt="Sky" id="Sky3">
+    <!-- Hovedtreet for høststemning -->
+    <img src="høstimages/Tree2.png" alt="Høsttre med oransje blader" id="main-tree">
     
-    <div id="bakkenBoks" class="Bakken"></div>
-    <div id="SolGul" class="sun"></div>
-    <div id="SolRød" class="sun"></div>
-    <div id="SolBakgrunn" class="sun"></div>
-    <div id="TreDetaljer" class="Detaljer"></div>
-    <div id="GresskarDetaljer" class="Detaljer"></div>
-    <div id="BålDetaljer" class="Detaljer"></div>
-    <div id="BålLys" class="Detaljer"></div>
+    <!-- Tilfeldig plassert gresskar for å skape sjarm -->
+    <img src="høstimages/gresskar.png" alt="Lite gresskardekorasjon" class="small-pumpkin">
     
+    <!-- Et bål for en koselig atmosfære -->
+    <img src="høstimages/Bål.png" alt="Bålets flammer" id="campfire-main">
     
+    <!-- Bakgrunnsfjell for dybde -->
+    <img src="høstimages/Fjell.png" alt="Fjell i bakgrunnen" class="background-mountain">
+    
+    <!-- Skyer som flyter rolig -->
+    <img src="høstimages/Sky.png" alt="Liten sky" id="cloud-1">
+    <img src="høstimages/Sky.png" alt="Middels stor sky" id="cloud-2">
+    <img src="høstimages/Sky.png" alt="En annen sky" id="cloud-3">
+
+    <!-- Bakgrunnslag -->
+    <div id="ground" class="layer"></div>
+    <div id="sun-layer-1" class="sun"></div>
+    <div id="sun-layer-2" class="sun"></div>
+    <div id="sun-layer-3" class="sun"></div>
+    <div id="tree-shadow" class="shadow"></div>
+    <div id="pumpkin-shadow" class="shadow"></div>
+    <div id="campfire-shadow" class="shadow"></div>
+    <div id="campfire-glow" class="shadow"></div>
 </body>
 </html>
