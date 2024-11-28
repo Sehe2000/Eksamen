@@ -1,10 +1,10 @@
-/* Global tilbakestilling for konsekvent styling */
+
 html, body {
     background-color: #155672; /* Dyp blågrønn for en skumringsaktig høststemning */
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden; /* Hindrer horisontal rulling */
+    overflow-x: hidden; /* vil hindrer horisontal rulling */
 }
 
 body {
@@ -14,53 +14,53 @@ body {
     min-height: 100%;
 }
 
-/* Treet: justert for å føles mindre perfekt */
+
 #main-tree {
     width: 510px; /* Mindre trestørrelse for å balansere elementene */
-    height: auto; /* Holder proporsjonene konsekvente */
+    height: auto; 
     position: absolute;
     z-index: 800; /* Sørger for at det er over bakken */
-    left: 85px; /* Flyttet litt til siden for å unngå midten */
+    left: 85px; /* Flytter tree litt til siden */
 }
 
 /* Skygge for å gi treet dybde */
 #tree-shadow {
     width: 200px; 
-    height: 60px; /* Forlenget skyggen for realisme */
-    background-color: rgba(0, 0, 0, 0.2); /* Mykere skyggetone */
+    height: 60px; /* Forlenget skyggen for at den blir mer realistisk */
+    background-color: rgba(0, 0, 0, 0.2); /* en "mykereskyggetone" */
     border-radius: 50%;
     z-index: 550;
     bottom: 40px;
     left: 75px;
     position: absolute;
-    filter: blur(10px); /* Mindre intens uskarphet */
+    filter: blur(10px); 
 }
 
 /* Lite gresskar for en morsom sesongbetont detalj */
 .small-pumpkin {
-    width: 120px; /* Litt større for synlighet */
+    width: 120px; /* kontrollerer bredde av den */
     height: 110px;
     bottom: 50px;
     left: 270px;
     position: absolute;
     z-index: 801;
-    transform: rotate(-3deg); /* Litt rotasjon for å skape uperfeksjon */
+    transform: rotate(-3deg); 
 }
 
-/* Gresskarskygge */
+/* skyggen til pumpkin */
 #pumpkin-shadow {
     width: 110px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.2); /* Mykere skygge for gresskar */
+    background-color: rgba(0, 0, 0, 0.2); /*  skygge farge til gresskaren */
     border-radius: 50%;
     bottom: 48px;
     left: 265px;
     position: absolute;
     z-index: 550;
-    filter: blur(8px); /* Mindre uskarphet for en mykere effekt */
+    filter: blur(8px); 
 }
 
-/* Bål med en subtil glød */
+/* Bål med glød */
 #campfire-main {
     width: 150px;
     height: 150px;
@@ -68,7 +68,7 @@ body {
     right: 300px;
     position: absolute;
     z-index: 1000;
-    transform: rotate(1deg); /* Liten uperfeksjon */
+    transform: rotate(1deg); 
 }
 
 /* Bålskygge og glød */
@@ -87,7 +87,7 @@ body {
 #campfire-glow {
     width: 140px;
     height: 140px;
-    background-color: rgba(255, 140, 0, 0.6); /* Subtil oransje glød */
+    background-color: rgba(255, 140, 0, 0.6); /* oransje glød */
     border-radius: 50%;
     bottom: 130px;
     right: 285px;
@@ -130,25 +130,24 @@ body {
     width: 350px;
     height: 200px;
     top: 65px;
-    right: 120px; /* Flyttet lenger til høyre for balanse */
+    right: 120px; /* Flyttet lenger til høyre */
     position: absolute;
     z-index: 600;
     opacity: 0.6; 
     transform: rotate(-5deg);
 }
 
-/* Bakkeelement */
+/* Bakkeelementen */
 #ground {
     width: 100%;
     height: 250px;
-    background-color: #3c2d2d; /* Varm brunfarge for bakken */
+    background-color: #3c2d2d; /* "Varm" brunfarge for bakken */
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 500;
 }
 
-/* Solens lag for subtile gradienteffekter */
 #sun-layer-1 {
     width: 70px;
     height: 70px;

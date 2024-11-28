@@ -1,22 +1,19 @@
-/* Reset and general styles Koden er godkjent av css validator */
-
 
 body, html {
-    height: 100%;
+    height: 100%; /* Vil da dekke høyden av skjermen */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* skal sentrerer innholdet horisontalt */
     align-items: center;
-    background-color: #05233d; /* Forsøk på å få til en lysblå snøete farge */
-    
+    background-color: #05233d; /* Mørk blå bakgrunnsfarge som gir vinterstemning */
 }
 
 .containerforitems {
-    position: relative;
+    position: relative; /* vil plassere elementene relativt til containeren */
     width: 80%;
     height: 80%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Sentrerer innholdet vertikalt */
     overflow: hidden;
 }
 
@@ -25,27 +22,16 @@ body, html {
     position: absolute;
     left: 50%;
     bottom: 25%;
-    width: 300px; /* Adjust size if necessary */
+    width: 300px; 
     height: 200px;
-    animation: skiDown 3s ease-in-out infinite; /* Animation lasts 3 seconds and loops */
+    animation: skiDown 3s ease-in-out infinite; /* Legger til en animasjon som går i loop */
 }
 
-.bear{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-}
-.bear-img {
-    width: 10%;
-    height: 10%;
-}
-
-/* Cabin image centered */
 .Vinterlandscape img {
     display: block;
-    width: 100%;
+    width: 100%; /* Setter bredden til å dekke hele containeren */
     max-width: 100%; /* Corrected to a valid value */
-    border-radius: 10px; /* Optional: rounded corners */
+    border-radius: 10px; /* Det er dette som gir runde hjørner */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional: shadow for depth */
 }
 
@@ -74,8 +60,3 @@ body, html {
     }
 }
 
-.bear-caption {
-    font-size: 14px;
-    color: #555;
-    margin-top: 5px;
-}

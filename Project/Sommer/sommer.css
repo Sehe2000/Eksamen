@@ -1,4 +1,4 @@
-/* Tilbakestilling av marginer og polstring */
+
 body {
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ body {
     right: 0;
 }
 
-/* Solen - rund og animert */
+/* Solen, rund og animert */
 .sun {
     height: 90px; /* Gjorde solen litt mindre */
     width: 90px; /* Forholdene holdes */
@@ -30,7 +30,7 @@ body {
     background-color: yellow;
     top: 12%; /* Justert litt for mer balanse */
     left: 15%; /* Flyttet for å skape variasjon */
-    animation: sunray 7.5s infinite ease-in-out; /* En lengre og mykere animasjon */
+    animation: sunray 7.5s infinite ease-in-out; /* En lengre animasjon */
 }
 
 /* Animasjon for solen */
@@ -40,7 +40,7 @@ body {
         opacity: 1;
     }
     50% {
-        transform: scale(1.3); /* Økte intensiteten litt */
+        transform: scale(1.3); /* ville øke intensiteten litt */
         opacity: 0.85;
     }
     100% {
@@ -49,23 +49,23 @@ body {
     }
 }
 
-/* Havområdet */
+/* dette blir Havområdet */
 .ocean {
-    height: 35%; /* Gjorde havet større for balanse */
+    height: 35%; /* Gjorde havet større */
     position: relative;
-    background-color: #00a4d3; /* Mer dempet blå for en naturlig følelse */
-    top: 40%; /* Starter rett under himmelen */
+    background-color: #00a4d3; /* Mer dempet blå */
+    top: 40%; /* for at den skal starte rett under himmelen */
     left: 0;
     right: 0;
 }
 
-/* Bølger i havet */
+/* Bølgene i havet */
 .waves {
-    height: 45px; /* Gjorde bølgene lavere */
+    height: 45px; /* Gjør bølgene lavere */
     width: 100%;
     position: absolute;
     background-color: #5edfff; /* Lysere for å skille seg ut fra havet */
-    border-radius: 50%; /* Gjorde bølgene mykere */
+    border-radius: 50%; 
     bottom: 40px; /* Plasserte dem nærmere bunnen */
     animation: wave 9.5s infinite ease-in-out; /* Liten variasjon i animasjonstid */
 }
@@ -114,7 +114,7 @@ body {
 
 /* Hover-effekt for sandslottet */
 .sandcastle:hover {
-    transform: scale(1.15); /* Gjorde det mindre dramatisk */
+    transform: scale(1.15); 
 }
 
 /* Surfebrett */
@@ -126,14 +126,14 @@ body {
     right: 210px;
 }
 
-/* Seilbåten - animert gjennom skjermen */
+/* Seilbåten animert gjennom skjermen */
 .sailboat {
     height: 140px;
     width: 140px;
     position: absolute;
     bottom: 480px;
     left: 100%;
-    animation: sailing 19s linear; /* Langsom og rolig */
+    animation: sailing 19s linear; 
 }
 
 /* Animasjon for seilbåten */
@@ -152,20 +152,20 @@ body {
     width: 280px;
     position: absolute;
     bottom: 120px;
-    left: 50px; /* Flyttet nærmere midten */
-    transition: transform 0.8s ease; /* Raskere hover-effekt */
+    left: 50px; /* Flytter den nærmere midten */
+    transition: transform 0.8s ease; /* en quick hover-effekt */
 }
 
 /* Hover-effekt for parasollen */
 .umbrella:hover {
-    transform: scale(1.1); /* Mindre forstørrelse for subtilitet */
+    transform: scale(1.1); 
 }
 
 /* Strandhåndkle */
 .towel {
-    height: 190px; /* Redusert størrelse */
+    height: 190px; 
     width: 180px;
     position: absolute;
     bottom: 80px;
-    left: 220px; /* Plassert for balanse */
+    left: 220px; 
 }

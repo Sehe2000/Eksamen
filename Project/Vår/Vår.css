@@ -1,30 +1,30 @@
 /* Bakgrunnsstil for hele nettsiden */
 body, html {
-    background-image: url(imagesvår/Vår.jpg); /* Bruker et vårlig landskap som bakgrunn */
-    width: 104%; /* Justert litt for å skape en bredere følelse */
+    background-image: url(imagesvår/Vår.jpg); /* Bruker et det mest "vårlig" landskap eg kunne finne som bakgrunn */
+    width: 104%; 
     height: 100%; 
-    background-position: center; /* Sentraliserer bildet for balanse */
-    background-repeat: no-repeat; /* Hindrer repetisjon */
-    overflow: hidden; /* Skjuler uønskede scrollbars */
+    background-position: center; /* Sentraliserer bildet */
+    background-repeat: no-repeat; 
+    overflow: hidden; 
 }
 
 /* Hovedcontainer som holder elgen */
 .container {
     position: absolute;
-    width: 100%; /* Full bredde for fleksibilitet */
+    width: 100%; 
     height: 100%; 
     display: flex; /* Bruker flexbox for å plassere elgen */
     justify-content: flex-start; /* Starter elgen på venstre side */
     align-items: flex-end; /* Plasserer elgen nederst */
     animation: moveLeft 6s linear; /* Elgen beveger seg sakte til venstre */
-    animation-iteration-count: 1; /* Animasjonen kjører én gang */
+    animation-iteration-count: 1; /* Animasjonen vil kjøre én gang */
     animation-fill-mode: forwards; /* Holder elgen på siste posisjon */
 }
 
 /* Hover-effekt for containeren */
 .container:hover {
     transform: translate(-80px); /* Flytter elgen litt ved hover */
-    transition: transform 0.5s ease-in-out; /* Gjør det mer naturlig */
+    transition: transform 0.5s ease-in-out; /* forsøker å gjøre det mer naturlig */
 }
 
 /* Animasjon som flytter elgen fra høyre til venstre */
@@ -68,7 +68,7 @@ body, html {
 
 
 /* Vårelement - fast dekorasjon */
-.SpringDecoration {
+.Bakgrunnen {
     position: absolute;
     top: 10%; /* Ligger litt høyere for balanse */
     right: 20%; /* Flyttet til høyre */
@@ -79,14 +79,14 @@ body, html {
 /* Elgbildet */
 .Elg {
     position: relative;
-    bottom: 0; /* Elgen starter på bakken */
-    left: 5%; /* Flyttet elgen til venstre */
-    height: 180px; /* Justert størrelse for variasjon */
+    bottom: 0; 
+    left: 5%; 
+    height: 380px; /* endret på px helt til den så proporsjonell til hunteren */
     width: auto;
-    animation: slightBounce 2s infinite ease-in-out; /* Gir elgen en liten sprett */
+    animation: slightBounce 2s infinite ease-in-out; /* pøver å gi elgen en liten sprett */
 }
 
-/* Animasjon for å gi elgen litt bevegelse */
+/* Animasjon for å gi elgen bevegelse */
 @keyframes slightBounce {
     0%, 100% {
         transform: translateY(0);

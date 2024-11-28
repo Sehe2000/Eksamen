@@ -6,15 +6,15 @@
 }
 
 body, html {
-    height: 100%;
+    height: 100%; /* vil gjøre at bodien og html dekker høyden av skjermen */
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Dette vil sentrere innholdet vertikalt */
 }
 
-/* Header styling */
+/* Dette vil være styling for headeren */
 .containeravtitler {
     width: 100%;
     padding: 25px;
@@ -28,7 +28,7 @@ body, html {
     text-transform: uppercase;
 }
 
-/* Letter animations */
+/* For animasjonen */
 .bokstaven {
     display: inline-block;
     opacity: 0;
@@ -86,8 +86,8 @@ body, html {
 
 /* dette skaper et hover effect for boksene */
 .årstid-box:hover {
-    transform: scale(1.03); /* Slight zoom */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transform: scale(1.03); /* skaper en liten zoom */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* litt skygge*/
 }
 
 .årstid-box:hover img {
