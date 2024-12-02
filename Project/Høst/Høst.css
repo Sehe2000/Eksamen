@@ -21,6 +21,7 @@ body {
     position: absolute;
     z-index: 800; /* Sørger for at det er over bakken */
     left: 85px; /* Flytter tree litt til siden */
+    bottom: 100px;
 }
 
 /* Skygge for å gi treet dybde */
@@ -185,5 +186,5 @@ body {
 /* Animasjoner */
 @keyframes campfire-glow-pulse {
     0% { transform: scale(0.9); }
-    100% { transform: scale(1.1); }
+    100% { transform: scale(2.1); }
 }
